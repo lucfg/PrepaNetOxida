@@ -8,32 +8,42 @@ using System;
 public class scriptTiempo : MonoBehaviour
 {
 
-
-    public float fTiempo = 60.0f;   // Tiempo inicial del timer
+    public float fTiempo = 30.0f;   // Tiempo inicial del timer
     public Text tTextoTiempo;           // Texto de tiempo
     float fTiempoRestar = 0.0f;
     public GameObject btnBoton;
     public Slider sliderIzq;
     public Slider sliderDer;
-    int valor = 60;
+    int valor = 30;
+    public RectTransform panel;
+    public Text tempMaxima;
+    public Text textoFinal;
+
+    public GameObject DatosEstaticos;
+    public scrptGanoPerdio Script;
+
+    void Awake()
+    {
+        DatosEstaticos = GameObject.FindGameObjectWithTag("Datos2") as GameObject;
+        Script = DatosEstaticos.GetComponent<scrptGanoPerdio>();
+    }
 
     void Update()
     {
         fTiempo -= fTiempoRestar;
-        tTextoTiempo.text = fTiempo.ToString("F0") + "\n segundos";
-        determinarAumento();
-
+        
         // El tiempo se acabo
-        if (fTiempo <= 0.0f)
-        {
-            // Se cambia la escena (todavia le faltan cosas dentro del if)
-            SceneManager.LoadScene("escena_PantallaInicio");
+        if (fTiempo <= 0.0f ){
+         
+            panel.gameObject.SetActive(true);
+
+        }else {
+            tTextoTiempo.text = fTiempo.ToString("F0") + "\n segundos";
+            determinarAumento();
         }
     }
 
-    void determinarAumento()
-    {
-
+    void determinarAumento(){
         int valorActual = Int32.Parse(tTextoTiempo.text.ToString().Substring(0, 2));
 
         if (valorActual == valor - 1)
@@ -77,11 +87,38 @@ public class scriptTiempo : MonoBehaviour
             sliderDer.value = temperaturaDer + 40;
 
         }
+
+
+        if (temperaturaIzq >= Int32.Parse(tempMaxima.text.ToString()) || temperaturaDer >= Int32.Parse(tempMaxima.text.ToString()))
+        {
+            fTiempo = 0.0f;
+            panel.gameObject.SetActive(true);
+            textoFinal.text = "¡Haz excedido la \n temperatura permitida!";
+            Script.gano = false;
+        }
     }
     public void comenzarJuego()
     {
         fTiempoRestar = Time.deltaTime;
         Destroy(btnBoton);
+    }
+
+    public void finalizarJuego()
+    {
+        SceneManager.LoadScene("escena_Ganar");
+    }
+
+    public void change() {
+        int temperaturaIzq = (int)sliderIzq.value;
+        int temperaturaDer = (int)sliderDer.value;
+
+        if (temperaturaIzq >= Int32.Parse(tempMaxima.text.ToString()) || temperaturaDer >= Int32.Parse(tempMaxima.text.ToString()))
+        {
+            fTiempo = 0.0f;
+            panel.gameObject.SetActive(true);
+            textoFinal.text = "¡Haz excedido la \n temperatura permitida!";
+            Script.gano = false;
+        }
     }
 }
 

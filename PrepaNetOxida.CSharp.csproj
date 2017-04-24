@@ -82,9 +82,11 @@
     <Compile Include="Assets\Scripts\scriptAlimentosSeleccionados.cs" />
     <Compile Include="Assets\Scripts\scriptBotones.cs" />
     <Compile Include="Assets\Scripts\scriptBotonesComida.cs" />
+    <Compile Include="Assets\Scripts\scriptFinalNivel.cs" />
     <Compile Include="Assets\Scripts\scriptInicioNivel.cs" />
     <Compile Include="Assets\Scripts\scriptSeleccionCompleta.cs" />
     <Compile Include="Assets\Scripts\scriptTiempo.cs" />
+    <Compile Include="Assets\Scripts\scrptGanoPerdio.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
