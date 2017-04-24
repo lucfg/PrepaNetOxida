@@ -107,10 +107,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 917, y: 492}
-  m_MaxSize: {x: 22012, y: 14042}
+  m_MinSize: {x: 915, y: 492}
+  m_MaxSize: {x: 22010, y: 14042}
   vertical: 0
-  controlID: 468
+  controlID: 6291
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_MinSize: {x: 438, y: 492}
   m_MaxSize: {x: 14008, y: 14042}
   vertical: 1
-  controlID: 469
+  controlID: 6249
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_MinSize: {x: 438, y: 271}
   m_MaxSize: {x: 14008, y: 10021}
   vertical: 0
-  controlID: 379
+  controlID: 6218
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -392,7 +392,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 32f6ffffa8f6ffffecf9ffff1afbffff000000008c2700009c270000
+    m_ExpandedIDs: 226dffff3471ffff6a74ffffe274ffffce77ffffdc79ffffec7affff907cffff2a7fffff3c81ffff8482fffff685ffff2487ffff8688ffff1e8bffff5a8dfffff68effffb690ffff3491ffffb291ffffe693ffff069bffff9a9bffff0ccaffff68d6ffff6ad7ffffaed8ffffe4f6ffff66f8ffffe6f8ffffe2fbffff0000000002260000122600007c270000822800009e280000ae280000b8280000283f0000ca5a0000f85a0000205b0000865b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -442,14 +442,14 @@ MonoBehaviour:
     width: 1020
     height: 439
   m_SceneLighting: 1
-  lastFramingTime: 666.7806933333334
+  lastFramingTime: 2987.724539111111
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 512, y: 384, z: 0}
+    m_Target: {x: 512, y: 385.7882, z: 0}
     speed: 2
-    m_Value: {x: 512, y: 384, z: 0}
+    m_Value: {x: 512, y: 385.7882, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -476,9 +476,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 860.98285
+    m_Target: 903.82605
     speed: 2
-    m_Value: 860.98285
+    m_Value: 903.82605
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -589,7 +589,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 5e220000
     m_LastClickedID: 8798
-    m_ExpandedIDs: 0000000022250000742500000e26000014260000
+    m_ExpandedIDs: 00000000ce240000fa24000020250000ba250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -617,7 +617,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000022250000742500000e26000014260000
+    m_ExpandedIDs: 00000000ce240000fa24000020250000ba250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
