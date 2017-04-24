@@ -49,11 +49,9 @@ public class scriptFinalNivel : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
-        ganaOpierde = new string [2] { "¡Perfecto! \n ¡¡Realizaste el cocimiento perfecto de tu cena!! \n"+
-                                        "Lograste retener todos los nutrientes esenciales del aceite \n"+
+        ganaOpierde = new string [2] { "¡Perfecto! Lograste retener todos los nutrientes esenciales del aceite \n"+
                                         "y maximizaste el valor nutrimental. Ahora podrás disfrutar \n" +
                                         "de una comida excelente llena de energía y sin sentirte culpable.\n" +
-                                        "¡Enhorabuena!\n"+
                                         "Las moléculas del aceite permanecieron en su forma original \n" +
                                         "y natural al ser cocidas a una temperatura menor a su punto \n"+
                                         "de fusión y evitando la creación de un radical libre.",
