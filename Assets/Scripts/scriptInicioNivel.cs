@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class scriptInicioNivel : MonoBehaviour {
 
 	public GameObject DatosEstaticos;
+    public RectTransform panelFinal;
 	public scriptAlimentosSeleccionados Script;
+    public Text tempMaxima;
 
 	public string sAceite = "";
 	public string sComida = "";
-	public Image imgAceite;
+    public Image imgAceite;
 	public Image imgComida;
 
 	public Sprite sptAceite1;
@@ -35,6 +37,8 @@ public class scriptInicioNivel : MonoBehaviour {
 	void Start () {
 		sAceite = Script.sBtnAceiteSelec;
 		sComida = Script.sBtnComidaSelec;
+        tempMaxima.text = Script.fTempMax.ToString();
+        panelFinal.gameObject.SetActive(false);
 
 		// Switch para determinar que aceite guardar
 		switch (sAceite) {
